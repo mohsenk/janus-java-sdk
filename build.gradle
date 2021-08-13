@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+}
+
+group 'com.kavenegar'
+version '0.1'
+
+sourceCompatibility = 13
+targetCompatibility = 13
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api 'com.google.code.gson:gson:2.8.6'
+    api 'org.slf4j:slf4j-api:1.7.30'
+
+}
+
+test {
+    useJUnitPlatform()
+}
